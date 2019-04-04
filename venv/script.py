@@ -384,7 +384,7 @@ appended = keras.layers.concatenate([embd, additional_input])
 
 lstm = LSTM(225)(appended)
 
-dropout = Dropout(0.35)(lstm)
+dropout = Dropout(0.1)(lstm)
 main_output = Dense(2, activation='sigmoid', name='main_output')(dropout)
 
 rnnModel = Model(inputs=[main_input, additional_input], outputs=[main_output])
