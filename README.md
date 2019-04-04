@@ -2,6 +2,8 @@
 
 1. venv/script.py loads the labeled tweets from "trainSet.txt" and "testSet.txt".
 
+   * internet connection is needed for downloading packages and GoogleNews-vectors.
+
 2. Preprocesses the tweets.
 
 3. Converts words into a word vector using "GoogleNews-vectors-negative300.bin.gz" word2vec traind model.
