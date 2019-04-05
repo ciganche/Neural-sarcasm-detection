@@ -47,11 +47,11 @@ There are two input layers in the neural network:
 Layer (type)  |     Output shape     |  Param #      | Connected to  
 ------------- | ------------- | --------------|------------
 main_input (InputLayer)  | 1,75  |       0        |
-embedding_1 (Embedding)  | 75, 300  |      2947500         |main_input[0][0]  
+embedding_1 (Embedding)  | 75, 300  |      2947500         |main_input 
 additional_input (InputLayer)  | 75, 6  |      0         |
-concatenate_1 (Concatenate)  | 75, 306  |     0          |embedding_1[0][0], additional_input[0][0]
-lstm_1 (LSTM) | 225 | 6240|concatenate_1[0][0
-dropout_1 (Dropout)   | 225 |0| lstm_1[0][0]
-main_output (Dense)| 2 |  12 |dropout_1[0][0] 
+concatenate_1 (Concatenate)  | 75, 306  |     0          |embedding_1, additional_input
+lstm_1 (LSTM) | 225 | 6240|concatenate_1
+dropout_1 (Dropout)   | 225 |0| lstm_1
+main_output (Dense)| 2 |  12 |dropout_1
 
 
