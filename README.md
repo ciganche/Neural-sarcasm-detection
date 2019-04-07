@@ -17,6 +17,7 @@
 
 
 Dropout layer valus (0.1) and the number of LSTM cells ware gained in the commented optimization process over the validation set.
+Train/validation/test split is 80/10/10 %.
 __________________________________________________________________________________________________
 
 There are two input layers in the neural network:
