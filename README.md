@@ -13,7 +13,7 @@
 
 #### Data used in this experiment is taken from the SemEval-2018 competition in sarcasm detection on Twitter.
 
-#### Maximum achieved accuracy of 71.2% (weightend average f1-score: 70%).
+#### Achieved accuracy of 71.2% (f1-score: 0.7).
 
 
 Dropout layer valus (0.1) and the number of LSTM cells ware gained in the commented optimization process over the validation set.
